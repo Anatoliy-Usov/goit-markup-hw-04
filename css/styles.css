@@ -131,15 +131,12 @@ header .container {
 
 .header-link-icon:hover,
 .header-link-icon:focus {
-  fill: var(
-  --main-color-blue
-  )
+  fill: var(--main-color-blue);
 }
 
 .header-mail {
   display: flex;
   align-items: center;
-  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -152,7 +149,6 @@ header .container {
 .header-tel {
   display: flex;
   align-items: center;
-  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -173,7 +169,7 @@ header .container {
 .hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/Img-header.jpg);
-  min-width: 1600px;
+  max-width: 1600px;
   padding: 200px 0;
   margin: 0 auto;
 }
@@ -214,7 +210,6 @@ header .container {
 
 .skill {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .skill-list {
@@ -225,23 +220,21 @@ header .container {
 
 .skill-item {
   min-width: 270px;
-  height: 98px;
 }
 
 .skill-item-box {
   display: flex;
-  width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
 .skill-item-icon {
   width: 70px;
   height: 70px;
-  margin-top: 25px;
 }
 
 .skill-title {
@@ -310,7 +303,6 @@ header .container {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 30px;
 }
 
 .team-name-link {
@@ -323,7 +315,7 @@ header .container {
 }
 
 .team-name-link:hover,
-.team-name-link:hover {
+.team-name-link:focus {
   background-color: #2196f3;
 }
 
@@ -332,7 +324,7 @@ header .container {
 }
 
 .team-name-link:hover .team-name-icon,
-.team-name-link:hover .team-name-icon {
+.team-name-link:focus .team-name-icon {
   fill: #ffffff;
 }
 
@@ -405,7 +397,7 @@ header .container {
 
 .footer-container {
   display: flex;
-  gap: 70px;
+  /* gap: 70px; */
   align-items: baseline;
 }
 
@@ -441,6 +433,7 @@ header .container {
 }
 
 .footer-soc {
+  margin-left: 70px;
 }
 
 .footer-soc-list {
